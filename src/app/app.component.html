@@ -2,3 +2,15 @@
 <p>
   Hello World, Start editing to see some magic happen :)
 </p>
+
+<ul>
+  <li *ngFor="let user of users; let i = index">
+    {{user.name}} {{user.lastName}}, Edad: {{user.age}}
+  </li>
+</ul>
+
+<button (click)="getAverage()"> Calcular </button>
+
+<button (click)="getMarried()"> Casados </button>
+
+<button (click)="addUser()"> Agregar Usuario </button>
